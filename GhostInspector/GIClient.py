@@ -1,3 +1,7 @@
+import sys
+import os
+
+
 class Client(object):
     """A simple API client for the GhostInspector's API.
     see README for more details
