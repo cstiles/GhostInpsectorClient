@@ -1,2 +1,4 @@
-# GhostInpsectorClient
-Client to work with the API of Ghost Inspector. 
+# Overview
+
+This client provides a simple way to access your data via the Ghost Inspector API.
+# Example
