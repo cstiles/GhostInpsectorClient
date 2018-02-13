@@ -1,11 +1,13 @@
 import re
 import pytest
 
+from src.GhostInspector.GIClient import Client
 pytest_plugins = 'pytester'
 
 @pytest.fixture()
-def gi_api_suite_tests_re():
-    return 'suites/\w+/tests/'
+def GIAPIClient():
+    client = Client(api_token = "35d22edc556e5b88f1e1bcf8fd3c90da7c0056c2")
+    return client
 
 @pytest.fixture()
 def gi_api_test_re():

@@ -49,7 +49,7 @@ jobs:
           command: |
             . venv/bin/activate
             ls
-            cd tests
+            cd src/tests
             pytest -sv
 
       - store_artifacts:

@@ -6,13 +6,14 @@ import sys
 
 import os
 import pytest
-from GI.GhostInspector.GIClient import Client
+from src.GhostInspector.GIClient import Client
 
 
 def test_get_tests():
     assert(True)
 
-def test_get_test():
+def test_get_test(GIAPIClient):
+    GIAPIClient.get_test_results()
     assert(True)
 
 def test_get_test_suites():
