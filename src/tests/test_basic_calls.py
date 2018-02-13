@@ -24,7 +24,7 @@ def test_get_test_by_name(GIAPIClient):
     assert(a != None)
 
 def test_get_test_results(GIAPIClient):
-    a = GIAPIClient.get_test_results()
+    a = GIAPIClient.get_test_results_by_id("sd")
     print(a)
     assert(a != None)
 
