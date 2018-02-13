@@ -50,7 +50,7 @@ jobs:
             . venv/bin/activate
             ls
             cd tests
-            python pytest.py -sv
+            pytest -sv
 
       - store_artifacts:
           path: test-reports
